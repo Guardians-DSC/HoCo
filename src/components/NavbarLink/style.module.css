@@ -18,7 +18,8 @@ a {
     
     align-items: center;
     padding: 1rem;
-    min-height: 1.5rem;
+    min-height: 2rem;
+    min-width: 2rem;
     
     border-radius: 12px;
 
@@ -68,7 +69,7 @@ a {
 
 .retracted .text {
     opacity: 0;
-    transition: 0s;
+    transition: opacity 0s;
 
 }
 

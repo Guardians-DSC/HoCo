@@ -4,13 +4,13 @@
     max-width: 320px;
 
     transition: .4s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease;
 
     font-family: 'Sen', sans-serif;
 }
 
 .outContainerRetracted > div {
-    width: 5rem;
+    width: 6rem;
     padding: 2rem 0;
 }
 
@@ -41,7 +41,8 @@
 }
 
 .containerRetracted .logo {
-    display: none;
+    opacity: 0;
+    transition: .5s;
 }
 
 .topHeader {
