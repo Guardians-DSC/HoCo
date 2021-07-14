@@ -24,25 +24,10 @@
 }
 
 .retract {
-    width: 100%;
     max-width: 24px;
     transition: opacity .3s;
     transition-timing-function: ease;
     cursor: pointer;
-}
-
-.logo {
-    width: 100%;
-    max-width: 250px;
-    margin-top: 2rem;
-    align-self: center;
-
-}
-
-.linksContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 }
 
 .profile {

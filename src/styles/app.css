@@ -1,6 +1,6 @@
 .app {
     display: flex;
-    background-color: aqua;
+    background-color: var(--background-white);
 }
 
 .body {

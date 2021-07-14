@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react'
-import {ReactComponent as HocoLogo} from '../../assets/LogoHoco.svg'
 import {ReactComponent as Retract} from '../../assets/retract.svg'
 import Hours from '../../assets/hours.svg'
 import OrganizationsIcon from '../../assets/organizations.svg'
 import QuestionsIcon from '../../assets/questions.svg'
 import activitiesIcon from '../../assets/activities.svg'
 import NavbarLink from '../NavbarLink'
-import { Link } from 'react-router-dom'
-import Style from './style.module.css'
+import style from './style.module.css'
+import { Logo } from '../Logo'
 
 const Sidebar = ({active}) => {
     const [pathname, setPathname] = useState(window.location.pathname)
@@ -22,13 +21,15 @@ const Sidebar = ({active}) => {
 
     const handlePathname = useCallback(() => {
         setPathname(window.location.pathname)
-    }, [setPathname])
+    }, [pathname, setPathname])
 
     return (
-        <div>
-            <div>
-
+        <div className={style.container}>
+            <div className={style.topHeader} onClick={handlePathname}>
+                <Retract className={style.retract}/>
+                <Logo />
             </div>
+            
             <ul>
                 {pages.map((page) => {
                     return (
