@@ -21,10 +21,11 @@ a {
     height: 1.5rem;
     
     border-radius: 12px;
+
+    transition: .4s;
     
     cursor: pointer;
     
-    transition: .2s;
 }
 
 .container:hover {   

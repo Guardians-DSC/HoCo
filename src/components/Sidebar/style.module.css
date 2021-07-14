@@ -1,22 +1,29 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+.outContainer > div {
     height: 100vh;
     width: 20vw;
     max-width: 320px;
 
-
-    box-sizing: border-box;
-    transition: .5s;
-    transition-property: width;
+    transition: .4s;
     transition-timing-function: ease-out;
+
+    font-family: 'Sen', sans-serif;
+}
+
+.outContainerRetracted > div {
+    width: 5rem;
+    padding: 2rem 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: fixed;
+    box-sizing: border-box;
 
     background-color: var(--main-color);
     box-shadow: 2px 0px 4px #7e7e7e;
-
-    font-family: 'Sen', sans-serif;;
 }
 
 .fullContainer {
@@ -24,8 +31,8 @@
 }
 
 .containerRetracted {
-    width: 5rem;
-    padding: 2rem 0;
+    width: inherit;
+    padding: inherit;
 }
 
 .containerRetracted .retract {
