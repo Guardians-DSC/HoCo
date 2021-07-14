@@ -4,4 +4,11 @@
 :root {
     --main-color: #649F71;
     --hover-green: #78b387;
+    --font-grey: #514E4E;
+
+    --large-font: 32px;
+    --medium-font: 24px;
+    --text-font: 14px;
+
+    font-family: 'roboto', sans-serif;;
 }

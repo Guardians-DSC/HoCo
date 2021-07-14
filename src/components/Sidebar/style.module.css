@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 100vh;
+    max-width: 320px;
+
+    box-sizing: border-box;
+    transition: .7s;
+    transition-property: width;
+    transition-timing-function: ease-out;
+
+    background-color: var(--main-color);
+    box-shadow: 2px 0px 4px #7e7e7e;
+
+    font-family: 'Sen', sans-serif;;
+
+}
+
+.topHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+.retract {
+    width: 100%;
+    max-width: 24px;
+    transition: opacity .3s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 2rem;
+    align-self: center;
+
+}
+
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile {
+    display: flex;
+    gap: 1rem;
+
+    align-self: center;
+    align-items: center;
+
+    color: white;
+    font-weight: bold;
+}
+
+.profile_photo {
+    display: inline;
+
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 3.5rem;
+    
+}

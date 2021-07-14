@@ -1,10 +1,14 @@
 import React from 'react'
-import Template from './template'
+import {ReactComponent as Book} from '../assets/darkBook.svg'
+import appStyle from '../styles/app.module.css'
+
 
 function Atividades() {
   return (
-    <Template>
-    </Template>
+    <div className={appStyle.title}>
+      <Book className={appStyle.icon}/>
+      <h1>minhas atividades</h1>
+    </div>
   );
 }
 
