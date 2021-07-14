@@ -18,7 +18,7 @@ a {
     
     align-items: center;
     padding: 1rem;
-    height: 1.5rem;
+    min-height: 1.5rem;
     
     border-radius: 12px;
 
@@ -51,7 +51,6 @@ a {
 }
 
 .icon {
-    padding-left: 0.5rem;
     filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(86deg) brightness(1180%) contrast(119%);
 }
 
