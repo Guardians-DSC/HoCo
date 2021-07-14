@@ -7,7 +7,9 @@ a {
 .text {
     font-weight: bold;
     font-size: 18px;
-    color: var(--background-white)
+    color: var(--background-white);
+    transition: .7s;
+    transition-timing-function: ease;
 }
 
 .container {
@@ -19,9 +21,9 @@ a {
     height: 1.5rem;
     
     border-radius: 12px;
-
+    
     cursor: pointer;
-
+    
     transition: .2s;
 }
 
@@ -44,9 +46,29 @@ a {
 
 .containerActive .text {
     color: var(--main-color);
+
 }
 
 .icon {
     padding-left: 0.5rem;
     filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(86deg) brightness(1180%) contrast(119%);
 }
+
+.retracted {
+    width: 2rem;
+    margin: 0 auto;
+
+    border-radius: 8px;
+}
+
+.retracted .icon {
+    margin: 0 auto;
+    padding-left: 0.2rem;
+}
+
+.retracted .text {
+    opacity: 0;
+    transition: 0s;
+
+}
+

@@ -4,10 +4,12 @@
     justify-content: space-between;
     
     height: 100vh;
+    width: 20vw;
     max-width: 320px;
 
+
     box-sizing: border-box;
-    transition: .7s;
+    transition: .4s;
     transition-property: width;
     transition-timing-function: ease-out;
 
@@ -15,7 +17,24 @@
     box-shadow: 2px 0px 4px #7e7e7e;
 
     font-family: 'Sen', sans-serif;;
+}
 
+.fullContainer {
+    padding: 2rem;
+}
+
+.containerRetracted {
+    width: 5rem;
+    padding: 2rem 0;
+}
+
+.containerRetracted .retract {
+    align-self: center;
+    transform: rotate(180deg)
+}
+
+.containerRetracted .logo {
+    display: none;
 }
 
 .topHeader {
@@ -25,10 +44,16 @@
 
 .retract {
     max-width: 24px;
-    transition: opacity .3s;
-    transition-timing-function: ease;
     cursor: pointer;
+    align-self: flex-end;
 }
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 
 .profile {
     display: flex;
