@@ -9,7 +9,7 @@
 
 
     box-sizing: border-box;
-    transition: .4s;
+    transition: .5s;
     transition-property: width;
     transition-timing-function: ease-out;
 
@@ -57,20 +57,5 @@
 
 .profile {
     display: flex;
-    gap: 1rem;
-
-    align-self: center;
-    align-items: center;
-
-    color: white;
-    font-weight: bold;
-}
-
-.profile_photo {
-    display: inline;
-
-    border-radius: 50%;
-    border: 2px solid white;
-    width: 3.5rem;
-    
+    justify-content: center;
 }

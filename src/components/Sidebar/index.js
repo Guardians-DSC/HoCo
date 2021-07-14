@@ -1,11 +1,13 @@
 import React, { useState, useCallback } from 'react'
 import {ReactComponent as Retract} from '../../assets/retract.svg'
-import Hours from '../../assets/hours.svg'
 import OrganizationsIcon from '../../assets/organizations.svg'
-import QuestionsIcon from '../../assets/questions.svg'
 import activitiesIcon from '../../assets/activities.svg'
-import NavbarLink from '../NavbarLink'
+import QuestionsIcon from '../../assets/questions.svg'
+import Hours from '../../assets/hours.svg'
+import Photo from '../../assets/eu.jpeg'
 import style from './style.module.css'
+import NavbarLink from '../NavbarLink'
+import { Profile } from '../Profile'
 import { Logo } from '../Logo'
 
 const Sidebar = ({active}) => {
@@ -34,8 +36,6 @@ const Sidebar = ({active}) => {
         setOpacity('1')
     }, [retracted, setRetracted])
 
-
-
     return (
         <div className={`${style.container} ${retracted ? style.containerRetracted : style.fullContainer}`}>
             <div className={style.topHeader} onClick={handlePathname}>
@@ -56,8 +56,8 @@ const Sidebar = ({active}) => {
                 })}
             </ul>
 
-            <div>
-
+            <div className={style.profile} onClick={handlePathname}>
+                <Profile photo={Photo} name='Rodrigo Eloy' retracted={retracted}/>
             </div>
         </div>
     )

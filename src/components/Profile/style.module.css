@@ -1,0 +1,21 @@
+
+.container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.photo {
+    width: 3.5rem;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.name {
+    color: white;
+    font-weight: bold;
+}
+
+.retracted .name {
+    display: none;
+}
