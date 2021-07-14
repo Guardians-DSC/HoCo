@@ -8,15 +8,15 @@ import Perfil from './views/Perfil'
 import Sidebar from './components/Sidebar'
 import './styles/reset.css'
 import './styles/root.css'
-import style from './styles/app.module.css'
+import './styles/app.css'
 
 export const App = ({ children }) => {
 
     return (
-        <div className={style.app}>
+        <div className='app'>
             <BrowserRouter>
                 <Sidebar />
-                <div className={style.body}>
+                <div className='body'>
                     <Switch>
                         <Route path='/' exact component={Horas} />
                         <Route path='/horas' component={Horas} />

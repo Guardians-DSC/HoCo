@@ -4,6 +4,12 @@ a {
     text-decoration: none;
 }
 
+.text {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--background-white)
+}
+
 .container {
     display: flex;
     gap: 1rem;
@@ -11,58 +17,36 @@ a {
     align-items: center;
     padding: 1rem;
     height: 1.5rem;
+    
+    border-radius: 12px;
 
     cursor: pointer;
+
+    transition: .2s;
+}
+
+.container:hover {   
+    background-color: var(--hover-green);
+}
+
+
+.containerActive {
+    background-color: var(--background-white);
+}
+
+.containerActive:hover {
+    background-color: var(--background-white) !important;
+}
+
+.containerActive .icon {
+    filter: none;
+}
+
+.containerActive .text {
+    color: var(--main-color);
 }
 
 .icon {
     padding-left: 0.5rem;
     filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(86deg) brightness(1180%) contrast(119%);
-}
-
-.text {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* CSS of the open navbar */
-
-.fullContainer {
-    border-radius: 12px;
-    color: white;
-}
-
-.fullContainer:hover {
-    transition: background-color .3s;
-    background-color: var(--hover-green);
-}
-
-/* CSS of the shrinked version of the navbar */
-
-.shrinkedContainer {
-    border-radius: 0 12px 12px 0;
-    width: 4rem;
-    
-}
-
-.shrinkedContainer:hover {
-    transition: .3s;
-    background-color: var(--hover-green);
-}
-
-/* CSS of the selected buttons on the navbar */
-
-.selectedContainer {
-    filter: none;
-    background-color: white;
-    color: var(--main-color);
-    box-shadow: 2px 2px 4px grey;
-}
-
-.selectedContainer:hover {
-    background-color: white;
-}
-
-.selectedContainer > .icon {
-    filter: none;
 }

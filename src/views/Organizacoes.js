@@ -1,11 +1,10 @@
 import React from 'react'
 import {ReactComponent as Orgs} from '../assets/darkOrgs.svg'
-import appStyle from '../styles/app.module.css'
 
 function Organizacoes() {
   return (
-    <div className={appStyle.title}>
-      <Orgs className={appStyle.icon}/>
+    <div className='title'>
+      <Orgs className='icon'/>
       <h1>organizações</h1>
     </div>
   );
