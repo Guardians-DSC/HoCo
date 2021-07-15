@@ -4,7 +4,7 @@
     align-items: center;
     box-sizing: border-box;
     
-    padding: 0rem .5rem 0rem 2rem;
+    padding: 0rem 2.5rem 0rem 5rem;
 
     position: fixed;
 
@@ -14,6 +14,7 @@
     -webkit-backface-visibility: hidden;
     background-color: var(--main-color);
     box-shadow: 2px 0px 4px black;
+    box-sizing: border-box;
 }
 
 .logo{
@@ -25,7 +26,7 @@
 }
 
 .burguer {
-    width: 2rem;
+    width: 2.5rem;
 }
 
 .sidebarContainer {
@@ -61,14 +62,19 @@
 }
 
 @media screen and (max-width: 550px) {
+    .headerContainer {
+        height: 4rem;
+        padding: 0rem 1rem 0rem 2rem;
+    }
+
     .logo {
         display: none;
     }
 
     .minilogo {
         display: inline-block;
-        height: 3rem;
-        width: 3rem;
+        height: 2.5rem;
+        width: 2.5rem;
         margin-right: 1rem;
     }
 
@@ -79,6 +85,6 @@
     .photo {
         display: none;
         margin-right: 1rem;
-        width: 3rem;
+        width: rem;
     }
 }
