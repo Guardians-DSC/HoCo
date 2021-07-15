@@ -1,17 +1,33 @@
 .app {
     display: flex;
     background-color: var(--background-white);
+    min-height: 200vh;
 }
+
 
 .body {
     padding: 4rem 3rem;
 }
+
+.mobile-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 7rem 1rem 2rem 1rem;
+}
+
+
 
 .title {
     display: flex;
     gap: 1rem;
     align-items: center;
     margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--font-grey);
+    letter-spacing: 0.1rem;
 }
 
 .icon {
@@ -21,9 +37,8 @@
 
 .body h1 {
     font-size: var(--large-font);
-    text-transform: uppercase;
-    font-weight: 500;
-    color: var(--font-grey);
-    letter-spacing: 0.1rem;
 }
 
+.mobile-body h1 {
+    font-size: var(--medium-font);
+}

@@ -1,0 +1,52 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    
+    padding: 0rem .5rem 0rem 2rem;
+
+    position: fixed;
+
+    width: 100%;
+    height: 5.5rem;
+
+    -webkit-backface-visibility: hidden;
+    background-color: var(--main-color);
+    box-shadow: 2px 0px 4px black;
+}
+
+.logo{
+    width: 10rem;
+}
+
+.minilogo {
+    display: none;
+}
+
+.burguer {
+    width: 2rem;
+}
+
+@media screen and (max-width: 550px) {
+    .logo {
+        display: none;
+    }
+
+    .minilogo {
+        display: inline-block;
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1rem;
+    }
+
+    .burguer {
+        width: 2rem;
+    }
+
+    .photo {
+        display: none;
+        margin-right: 1rem;
+        width: 3rem;
+    }
+}

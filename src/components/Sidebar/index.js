@@ -1,8 +1,9 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback, useEffect } from 'react'
 import { ReactComponent as Retract } from '../../assets/retract.svg'
 import OrganizationsIcon from '../../assets/organizations.svg'
 import activitiesIcon from '../../assets/activities.svg'
 import QuestionsIcon from '../../assets/questions.svg'
+import {ReactComponent as HocoLogo} from '../../assets/LogoHoco.svg'
 import Hours from '../../assets/hours.svg'
 import Photo from '../../assets/eu.jpeg'
 import style from './style.module.css'
@@ -10,7 +11,7 @@ import NavbarLink from '../NavbarLink'
 import { Profile } from '../Profile'
 import { Logo } from '../Logo'
 
-const Sidebar = ({ active }) => {
+const Sidebar = () => {
     const [pathname, setPathname] = useState(window.location.pathname)
     const [retracted, setRetracted] = useState(false)
     const [currentOpacity, setOpacity] = useState('1')
@@ -18,7 +19,7 @@ const Sidebar = ({ active }) => {
         { name: 'horas', text: 'Minhas Horas', icon: Hours, path: '/horas' },
         { name: 'atividades', text: 'Minhas Atividades', icon: activitiesIcon, path: '/atividades' },
         { name: 'orgs', text: 'Organizações', icon: OrganizationsIcon, path: '/orgs' },
-        { name: 'duvidas', text: 'Minhas Horas', icon: QuestionsIcon, path: '/duvidas' },
+        { name: 'duvidas', text: 'Dúvidas', icon: QuestionsIcon, path: '/duvidas' },
     ]
 
     function sleep(ms) {
@@ -37,33 +38,35 @@ const Sidebar = ({ active }) => {
     }, [retracted, setRetracted])
 
     return (
-        <div className={`${style.outContainer} ${retracted ? style.outContainerRetracted : ''}`}>
-            <div className={`${style.container} ${retracted ? style.containerRetracted : style.fullContainer}`}>
-                <div className={style.topHeader} onClick={handlePathname}>
-                    <Retract
-                        onClick={handleRetract}
-                        className={`${style.retract}`}
-                        style={{ opacity: currentOpacity }} />
-                    <div className={style.logo}>
-                        <Logo />
+        <div>
+            <div className={`${style.outContainer} ${retracted ? style.outContainerRetracted : ''}`}>
+                <div className={`${style.container} ${retracted ? style.containerRetracted : style.fullContainer}`}>
+                    <div className={style.topHeader} onClick={handlePathname}>
+                        <Retract
+                            onClick={handleRetract}
+                            className={`${style.retract}`}
+                            style={{ opacity: currentOpacity }} />
+                        <div className={style.logo}>
+                            <Logo Logo={HocoLogo}/>
+                        </div>
+                    </div>
+
+                    <ul className={style.links}>
+                        {pages.map((page) => {
+                            return (
+                                <li key={page.name} onClick={handlePathname}>
+                                    <NavbarLink text={page.text} icon={page.icon} path={page.path} pathname={pathname} retracted={retracted} />
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+                    <div className={style.profile} onClick={handlePathname}>
+                        <Profile photo={Photo} name='Rodrigo Eloy' retracted={retracted} />
                     </div>
                 </div>
-
-                <ul className={style.links}>
-                    {pages.map((page) => {
-                        return (
-                            <li id={page.name} onClick={handlePathname}>
-                                <NavbarLink text={page.text} icon={page.icon} path={page.path} pathname={pathname} retracted={retracted} />
-                            </li>
-                        )
-                    })}
-                </ul>
-
-                <div className={style.profile} onClick={handlePathname}>
-                    <Profile photo={Photo} name='Rodrigo Eloy' retracted={retracted} />
-                </div>
+                <div></div>
             </div>
-            <div></div>
         </div>
     )
 }
