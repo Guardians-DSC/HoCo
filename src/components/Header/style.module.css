@@ -28,6 +28,38 @@
     width: 2rem;
 }
 
+.sidebarContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    
+    z-index: 10;
+}
+
+.sidebarBackground {
+    transition: background-color .5s;
+}
+
+.active {
+    transform: translate(0vw);
+    transition: .7s;
+}
+
+.active .sidebarBackground {
+    background-color: rgba(0, 0, 0, 0.70);
+    transition-delay: .6s;
+}
+
+.inactive {
+    transform: translate(-100vw);
+    transition: .5s ease-in;
+    transition-delay: .25s;
+}
+
+.inactive .sidebarBackground {
+    background-color: #ffffff00;
+}
+
 @media screen and (max-width: 550px) {
     .logo {
         display: none;

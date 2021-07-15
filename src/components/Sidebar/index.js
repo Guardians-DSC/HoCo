@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from 'react'
 
 import { ReactComponent as Retract } from '../../assets/retract.svg'
+import { ReactComponent as Close } from '../../assets/x.svg'
 import { ReactComponent as HocoLogo } from '../../assets/LogoHoco.svg'
 import Photo from '../../assets/eu.jpeg'
 
@@ -11,7 +12,7 @@ import { Logo } from '../Logo'
 import style from './style.module.css'
 
 const Sidebar = ({ props }) => {
-    const {pages, pathname, handlePathname} = props
+    const {pages, pathname, handlePathname, isMobile} = props
 
     const [retracted, setRetracted] = useState(false)
     const [currentOpacity, setOpacity] = useState('1')
@@ -29,13 +30,16 @@ const Sidebar = ({ props }) => {
 
     return (
         <div>
-            <div className={`${style.outContainer} ${retracted ? style.outContainerRetracted : ''}`}>
+            <div className={`${isMobile ? style.mobileContainer : style.outContainer} ${retracted ? style.outContainerRetracted : ''}`}>
                 <div className={`${style.container} ${retracted ? style.containerRetracted : style.fullContainer}`}>
                     <div className={style.topHeader} onClick={handlePathname}>
-                        <Retract
+                        {isMobile ? 
+                            <Close className={`${style.retract}`}/> :
+                            <Retract
                             onClick={handleRetract}
                             className={`${style.retract}`}
                             style={{ opacity: currentOpacity }} />
+                        }
                         <div className={style.logo}>
                             <Logo Logo={HocoLogo} />
                         </div>

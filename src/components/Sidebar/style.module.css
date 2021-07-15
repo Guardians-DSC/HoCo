@@ -1,3 +1,13 @@
+.mobileContainer > div {
+    height: 100vh;
+    max-width: 320px;
+
+    transition: .4s;
+    transition-timing-function: ease;
+
+    font-family: 'Sen', sans-serif;
+}
+
 .outContainer > div {
     height: 100vh;
     width: 20vw;
@@ -51,11 +61,12 @@
 }
 
 .logo {
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .retract {
     max-width: 24px;
+    max-height: 24px;
     cursor: pointer;
     align-self: flex-end;
 }
