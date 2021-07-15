@@ -1,7 +1,3 @@
-.outContainer {
-    max-width: 20vw;
-}
-
 .outContainer > div {
     height: 100vh;
     width: 20vw;
