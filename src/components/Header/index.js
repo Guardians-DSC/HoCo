@@ -12,7 +12,8 @@ import style from './style.module.css'
 import Sidebar from '../Sidebar'
 
 export const Header = ({props}) => {
-    const { handlePathname } = props
+    const {handlePathname} = props
+
     const [isActive, setIsActive] = useState(false)
 
     const handleActive = useCallback(() => {
@@ -20,7 +21,7 @@ export const Header = ({props}) => {
     }, [isActive, setIsActive])
 
     return (
-        <div>
+        <div >
             <div className={`${style.sidebarContainer} ${isActive ? style.active : style.inactive}`}
                  onClick={handleActive}>
                 <div className={style.sidebarBackground}>
@@ -35,8 +36,8 @@ export const Header = ({props}) => {
                 <div className={style.logo} onClick={handlePathname}>
                     <Logo Logo={LogoIcon} />
                 </div>
-                <div className={style.minilogo} >
-                    <Logo Logo={Minilogo} />
+                <div className={style.minilogo} onClick={handlePathname}>
+                    <Logo Logo={Minilogo}/>
                 </div>
                 <div className={style.photo} onClick={handlePathname}>
                     <Profile photo={Photo} />

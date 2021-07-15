@@ -21,6 +21,8 @@ import './styles/app.css'
 export const App = ({ children }) => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1250)
     const [pathname, setPathname] = useState(window.location.pathname)
+
+
     const pages = [
         { name: 'horas', text: 'Minhas Horas', icon: Hours, path: '/horas' },
         { name: 'atividades', text: 'Minhas Atividades', icon: activitiesIcon, path: '/atividades' },
@@ -41,7 +43,7 @@ export const App = ({ children }) => {
         }, false)
     }, [isMobile])
 
-    const props = { pages, pathname, handlePathname }
+    const props = { pages, pathname, handlePathname, isMobile }
     return (
         <div className={`app`}>
             <BrowserRouter>
