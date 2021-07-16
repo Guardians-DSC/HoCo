@@ -9,7 +9,7 @@
     position: fixed;
 
     width: 100%;
-    height: 5.5rem;
+    height: 8rem;
 
     -webkit-backface-visibility: hidden;
     background-color: var(--main-color);
@@ -18,7 +18,7 @@
 }
 
 .logo{
-    width: 10rem;
+    width: 13rem;
 }
 
 .minilogo {
@@ -26,7 +26,11 @@
 }
 
 .burguer {
-    width: 2.5rem;
+    width: 3rem;
+}
+
+.photo img {
+    max-width: 5rem !important;
 }
 
 .sidebarContainer {

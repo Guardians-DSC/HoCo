@@ -61,7 +61,7 @@
 }
 
 .logo {
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 .retract {
@@ -81,4 +81,10 @@
 .profile {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 550px) {
+    .logo {
+        display: none;
+    }
 }

@@ -52,6 +52,7 @@ a {
 }
 
 .icon {
+    max-width: 24px;
     filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(86deg) brightness(1180%) contrast(119%);
 }
 
@@ -72,4 +73,3 @@ a {
     transition: opacity 0s;
 
 }
-

@@ -2,6 +2,7 @@ import React, {useState, useEffect, useCallback } from 'react'
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 
 import OrganizationsIcon from './assets/organizations.svg'
+import Minilogo from './assets/minilogo.svg'
 import activitiesIcon from './assets/activities.svg'
 import QuestionsIcon from './assets/questions.svg'
 import Hours from './assets/hours.svg'
@@ -17,17 +18,17 @@ import { Header }from './components/Header'
 import './styles/reset.css'
 import './styles/root.css'
 import './styles/app.css'
+import { Sobre } from './views/Sobre'
 
-export const App = ({ children }) => {
+export const App = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1250)
     const [pathname, setPathname] = useState(window.location.pathname)
-
-
     const pages = [
-        { name: 'horas', text: 'Minhas Horas', icon: Hours, path: '/horas' },
-        { name: 'atividades', text: 'Minhas Atividades', icon: activitiesIcon, path: '/atividades' },
-        { name: 'orgs', text: 'Organizações', icon: OrganizationsIcon, path: '/orgs' },
-        { name: 'duvidas', text: 'Dúvidas', icon: QuestionsIcon, path: '/duvidas' },
+        { name: 'horas', text: 'Minhas Horas', icon: Hours, path: '/horas', component: Horas },
+        { name: 'atividades', text: 'Minhas Atividades', icon: activitiesIcon, path: '/atividades', component: Atividades },
+        { name: 'orgs', text: 'Organizações', icon: OrganizationsIcon, path: '/orgs', component: Organizacoes },
+        { name: 'duvidas', text: 'Dúvidas', icon: QuestionsIcon, path: '/duvidas', component: Duvidas },
+        { name: 'sobre', text: 'O HoCo', icon: Minilogo, path: '/sobre', component: Sobre },
     ]
     
     const handlePathname = useCallback(() => {
@@ -48,13 +49,15 @@ export const App = ({ children }) => {
         <div className={`app`}>
             <BrowserRouter>
                 { isMobile ? <Header props={props}/> : <Sidebar props={props}/> }
+
                 <div className={`${isMobile ? 'mobile-body' : 'body'}`}>
                     <Switch>
                         <Route path='/' exact component={Horas} />
-                        <Route path='/horas' component={Horas} />
-                        <Route path='/atividades' component={Atividades} />
-                        <Route path='/orgs' component={Organizacoes} />
-                        <Route path='/duvidas' component={Duvidas} />
+                        {pages.map((page) => {
+                            return (
+                                <Route path={page.path} component={page.component} />
+                            )
+                        })}
                         <Route path='/perfil' component={Perfil} />
                         <Route path='*'><Redirect to='/' /></Route>
                     </Switch>

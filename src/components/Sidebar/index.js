@@ -3,7 +3,6 @@ import React, { useState, useCallback } from 'react'
 import { ReactComponent as Retract } from '../../assets/retract.svg'
 import { ReactComponent as Close } from '../../assets/x.svg'
 import { ReactComponent as HocoLogo } from '../../assets/LogoHoco.svg'
-import Photo from '../../assets/eu.jpeg'
 
 import NavbarLink from '../NavbarLink'
 import { Profile } from '../Profile'
@@ -12,8 +11,7 @@ import { Logo } from '../Logo'
 import style from './style.module.css'
 
 const Sidebar = ({ props }) => {
-    const {pages, pathname, handlePathname, isMobile} = props
-
+    const { pages, pathname, handlePathname, isMobile } = props
     const [retracted, setRetracted] = useState(false)
     const [currentOpacity, setOpacity] = useState('1')
 
@@ -56,7 +54,7 @@ const Sidebar = ({ props }) => {
                     </ul>
 
                     <div className={style.profile} onClick={handlePathname}>
-                        <Profile photo={Photo} name='Rodrigo Eloy' retracted={retracted} />
+                        <Profile name='Rodrigo Eloy' retracted={retracted} />
                     </div>
                 </div>
                 <div></div>
