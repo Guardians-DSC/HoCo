@@ -33,7 +33,7 @@ const Sidebar = ({ props }) => {
                     <div className={style.topHeader} onClick={handlePathname}>
                         {
                             isMobile ? 
-                            <Close className={`${style.retract}`}/> :
+                            <Close className={`${style.retract}`} /> :
                             <Retract
                             onClick={handleRetract}
                             className={`${style.retract}`}

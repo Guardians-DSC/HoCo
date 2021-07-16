@@ -37,7 +37,7 @@
 }
 
 .fullContainer {
-    padding: 2rem;
+    padding: 2rem 1.5rem;
 }
 
 .containerRetracted {
@@ -49,6 +49,11 @@
     align-self: center;
     transform: rotate(180deg)
 }
+
+.containerRetracted .retract:hover {
+    transform: rotate(-180deg) scale(1.15)
+}
+
 
 .containerRetracted .logo {
     opacity: 0;
@@ -69,6 +74,11 @@
     max-height: 28px;
     cursor: pointer;
     align-self: flex-end;
+    transition: transform 1s;
+}
+
+.retract:hover {
+    transform: rotate(360deg) scale(1.15)
 }
 
 .links {

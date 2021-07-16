@@ -2,7 +2,7 @@
 
 .text {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--background-white);
     transition: .7s;
     transition-timing-function: ease;

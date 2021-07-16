@@ -36,13 +36,8 @@ export const Header = ({ props }) => {
                         Logo={LogoIcon}
                         alt='Logo grande do hoco onde está escrito HoCo com o H e o C maiúsculos'/>
                 </div>
-                <div className={style.minilogo} onClick={handlePathname}>
-                    <Logo
-                        Logo={Minilogo}
-                        alt='Versão mini da logo, contendo um C com traços no meio para imitar ponteiros de relógios'/>
-                </div>
                 <div className={style.photo} onClick={handlePathname}>
-                    <Profile />
+                    <Profile retracted/>
                 </div>
             </div>
         </div>
