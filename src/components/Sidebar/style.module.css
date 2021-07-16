@@ -13,8 +13,8 @@
     width: 20vw;
     max-width: 320px;
 
-    transition: .4s;
-    transition-timing-function: ease;
+    transition: .5s;
+    transition-timing-function: ease-out;
 
     font-family: 'Sen', sans-serif;
 }
@@ -51,7 +51,7 @@
 }
 
 .containerRetracted .retract:hover {
-    transform: rotate(-180deg) scale(1.15)
+    transform: rotate(180deg) scale(1.15)
 }
 
 
@@ -78,7 +78,7 @@
 }
 
 .retract:hover {
-    transform: rotate(360deg) scale(1.15)
+    transform: scale(1.15)
 }
 
 .links {
