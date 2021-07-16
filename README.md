@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# O HoCo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align=center>
+  <img width=350 src='https://user-images.githubusercontent.com/42751604/125948239-49f7484e-d45d-4724-8bb8-d2e3c23845f8.png'/>
+</p>
+<br/>
 
-## Available Scripts
+<div align='justify'>
+  <p>
+  Olá! Bem-vinde ao HoCo. O HoCo é uma plataforma com objetivo de prover (inicialmente) aos alunos da graduação de Ciência da Computação na UFCG uma plataforma onde ele/ela pode salvar e gerenciar as suas horas complementares do curso.
+  </p>
+  <p>
+  A falta de conhecimento acerca do funcionamento das horas e atividades complementares do curso é algo que é de conhecimento geral dos alunos e professores e foi assim que o HoCo nasceu. O projeto tem com o objetivo de sanar essa deficiência do curso provendo um lugar onde os alunos além de salvarem suas horas possam ter conhecimento do seu funcionamento e das normas atuais do curso.
+  </p>
+</div>
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+## Requisitos
+Para executar o projeto você precisa instalar as seguintes ferramentas:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Node](https://nodejs.org/en/download/package-manager/)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+⚠️ OBS: O yarn não é exatamente uma dependência, mas é interessante que você instale para executar o projeto
 
-### `yarn test`
+### Executando o projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para que você instale o projeto siga os passos a seguir:
 
-### `yarn build`
+1. Instalar as dependências do projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+yarn install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ou
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
 
-### `yarn eject`
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+2. Executar o projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ou
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+Pronto! Simples assim e você já consegui executar localmente o projeto. Um aba se abrirá no seu navegador padrão com o projeto sendo executado localmente.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+⚠️ Ainda estamos trabalhando no projeto, caso você queira acompanhar o avanço do repositório dar um estrelinha ⭐ para você não perder o rep.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br/>
+<div align=center>
+  <p><i>No mais é isso! Obrigado por ler até aqui, espero que vocẽ tenha gostado do projeto!</i></p>
+  <img width=400 src='https://user-images.githubusercontent.com/42751604/125959482-99171781-d212-4bc2-af3c-1d0adcf813dd.gif'/>
+</div>
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
