@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 import style from './style.module.css'
 
-const NavbarLink = ({icon, text, path, pathname, retracted}) => {
-    let active = path === pathname
-    active = pathname === '/' && path === '/horas' ? active = true : active
+const NavbarLink = ({page, pathname, retracted}) => {
+    const { icon, text, path } = page
+    const active = path === pathname || (pathname === '/' && path === '/horas')
 
     return (
         <Link to={path} className={`${style.container}

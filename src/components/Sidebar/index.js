@@ -8,16 +8,14 @@ import NavbarLink from '../NavbarLink'
 import { Profile } from '../Profile'
 import { Logo } from '../Logo'
 
+import { sleep } from '../../util/util'
+
 import style from './style.module.css'
 
 const Sidebar = ({ props }) => {
     const { pages, pathname, handlePathname, isMobile } = props
     const [retracted, setRetracted] = useState(false)
     const [currentOpacity, setOpacity] = useState('1')
-
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
 
     const handleRetract = useCallback(async () => {
         setRetracted(!retracted)
@@ -28,10 +26,13 @@ const Sidebar = ({ props }) => {
 
     return (
         <div>
-            <div className={`${isMobile ? style.mobileContainer : style.outContainer} ${retracted ? style.outContainerRetracted : ''}`}>
-                <div className={`${style.container} ${retracted ? style.containerRetracted : style.fullContainer}`}>
+            <div className={`${isMobile ? style.mobileContainer : style.outContainer}
+                             ${retracted ? style.outContainerRetracted : ''}`}>
+                <div className={`${style.container}
+                                 ${retracted ? style.containerRetracted : style.fullContainer}`}>
                     <div className={style.topHeader} onClick={handlePathname}>
-                        {isMobile ? 
+                        {
+                            isMobile ? 
                             <Close className={`${style.retract}`}/> :
                             <Retract
                             onClick={handleRetract}
@@ -47,14 +48,17 @@ const Sidebar = ({ props }) => {
                         {pages.map((page) => {
                             return (
                                 <li key={page.name} onClick={handlePathname}>
-                                    <NavbarLink text={page.text} icon={page.icon} path={page.path} pathname={pathname} retracted={retracted} />
+                                    <NavbarLink
+                                        page={page}
+                                        pathname={pathname}
+                                        retracted={retracted} />
                                 </li>
                             )
                         })}
                     </ul>
 
                     <div className={style.profile} onClick={handlePathname}>
-                        <Profile name='Rodrigo Eloy' retracted={retracted} />
+                        <Profile retracted={retracted} />
                     </div>
                 </div>
                 <div></div>

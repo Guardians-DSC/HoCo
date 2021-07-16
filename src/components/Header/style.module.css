@@ -27,6 +27,7 @@
 
 .burguer {
     width: 3rem;
+    cursor: pointer;
 }
 
 .photo img {

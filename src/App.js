@@ -12,13 +12,14 @@ import Atividades from './views/Atividades'
 import Organizacoes from './views/Organizacoes'
 import Duvidas from './views/Duvidas'
 import Perfil from './views/Perfil'
+import { Sobre } from './views/Sobre'
+
 import Sidebar from './components/Sidebar'
 import { Header }from './components/Header'
 
 import './styles/reset.css'
 import './styles/root.css'
 import './styles/app.css'
-import { Sobre } from './views/Sobre'
 
 export const App = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 1250)
@@ -52,12 +53,8 @@ export const App = () => {
 
                 <div className={`${isMobile ? 'mobile-body' : 'body'}`}>
                     <Switch>
+                        {pages.map(page => <Route path={page.path} component={page.component} />)}
                         <Route path='/' exact component={Horas} />
-                        {pages.map((page) => {
-                            return (
-                                <Route path={page.path} component={page.component} />
-                            )
-                        })}
                         <Route path='/perfil' component={Perfil} />
                         <Route path='*'><Redirect to='/' /></Route>
                     </Switch>
