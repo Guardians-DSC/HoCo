@@ -65,8 +65,8 @@
 }
 
 .retract {
-    max-width: 24px;
-    max-height: 24px;
+    max-width: 28px;
+    max-height: 28px;
     cursor: pointer;
     align-self: flex-end;
 }
