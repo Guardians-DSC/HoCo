@@ -2,7 +2,6 @@ import React, { useCallback, useState } from 'react'
 
 import { ReactComponent as Burguer } from '../../assets/burg.svg'
 import { ReactComponent as LogoIcon } from '../../assets/LogoHoco.svg'
-import { ReactComponent as Minilogo } from '../../assets/minilogo.svg'
 
 import { Logo } from '../Logo'
 import { Profile } from '../Profile'

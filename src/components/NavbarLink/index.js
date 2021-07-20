@@ -11,7 +11,7 @@ const NavbarLink = ({page, pathname, retracted}) => {
         <Link to={path} className={`${style.container}
                                     ${active ? style.containerActive : ''}
                                     ${retracted ? style.retracted : ''}`}>
-            <img className={style.icon} src={icon}/>
+            <img className={style.icon} src={icon} alt=''/>
             <span className={style.text} >{text}</span>
         </Link>
     )
