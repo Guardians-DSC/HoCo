@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useCallback } from 'react'
+import React  from 'react'
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 
 import Sidebar from './components/Sidebar'
@@ -11,7 +11,7 @@ import usePagesContext from './contexts/app.context'
 import useResize from './contexts/resize.context'
 
 export const App = () => {
-    const { pathname, setPathname, pages } = usePagesContext()
+    const { pages } = usePagesContext()
     const { isMobile } = useResize()
 
     return (

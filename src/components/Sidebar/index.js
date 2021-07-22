@@ -60,6 +60,8 @@ const Sidebar = () => {
                                             retracted={retracted} />
                                     </li>
                                 )
+                            } else {
+                                return (<></>)
                             }
                         })}
                     </ul>
