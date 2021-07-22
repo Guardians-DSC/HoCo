@@ -4,8 +4,6 @@
 
     transition: .4s;
     transition-timing-function: ease;
-
-    font-family: 'Sen', sans-serif;
 }
 
 .outContainer > div {
@@ -66,12 +64,14 @@
 }
 
 .logo {
+    max-width: 220px;
+    align-self: center;
     margin-top: 3rem;
 }
 
 .retract {
-    max-width: 28px;
-    max-height: 28px;
+    max-width: 24px;
+    max-height: 24px;
     cursor: pointer;
     align-self: flex-end;
     transition: transform 1s;
@@ -94,7 +94,17 @@
 }
 
 @media screen and (max-width: 550px) {
-    .logo {
-        display: none;
+    .mobileContainer > div {
+        height: 100vh;
+        max-width: 320px;
+        font-size: 14px;
+        transition: .4s;
+        transition-timing-function: ease;
     }
+
+    .logo {
+        max-width: 200px;
+    }
+
+
 }

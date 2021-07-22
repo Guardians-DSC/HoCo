@@ -20,3 +20,10 @@
 .retracted .name {
     display: none;
 }
+
+@media screen and (max-width: 550px) {
+
+    .photo {
+        width: 48px;
+    }
+}

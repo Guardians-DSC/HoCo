@@ -15,6 +15,8 @@
     align-items: center;
     width: 100%;
     padding: 10rem 1rem 2rem 1rem;
+
+
 }
 
 
@@ -44,11 +46,10 @@
 }
 
 @media screen and (max-width: 550px) {
-
     .mobile-body {
         padding: 6rem 1rem 2rem 1rem;
-    }
 
+    }
 
     .mobile-body h1 {
         font-size: 20px;

@@ -2,8 +2,11 @@
 
 .text {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    
     color: var(--background-white);
+
     transition: .7s;
     transition-timing-function: ease;
 }
@@ -13,11 +16,11 @@
     gap: 1rem;
     
     align-items: center;
-    padding: 1rem;
+    padding: .75rem 1rem;
     min-height: 2rem;
     min-width: 2rem;
     
-    border-radius: 12px;
+    border-radius: 8px;
 
     transition: .4s;
     
@@ -68,4 +71,10 @@
     opacity: 0;
     transition: opacity 0s;
 
+}
+
+@media screen and (max-width: 550px) {
+    .text {
+        font-size: 14px;
+    }
 }

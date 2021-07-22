@@ -2,6 +2,7 @@ import React, { useCallback, useState } from 'react'
 
 import { ReactComponent as Burguer } from '../../assets/burg.svg'
 import { ReactComponent as LogoIcon } from '../../assets/LogoHoco.svg'
+import usePagesContext from '../../contexts/app.context'
 
 import { Logo } from '../Logo'
 import { Profile } from '../Profile'
@@ -10,8 +11,8 @@ import Sidebar from '../Sidebar'
 import style from './style.module.css'
 
 export const Header = ({ props }) => {
-    const { handlePathname } = props
-    const [isActive, setIsActive] = useState(false)
+    const { handlePathname } = usePagesContext()
+    const [ isActive, setIsActive ] = useState(false)
 
     const handleActive = useCallback(() => {
         setIsActive(!isActive)

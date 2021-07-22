@@ -10,10 +10,15 @@ import { Logo } from '../Logo'
 
 import { sleep } from '../../util/util'
 
+import usePagesContext from '../../contexts/app.context'
+import useResize from '../../contexts/resize.context'
+
 import style from './style.module.css'
 
-const Sidebar = ({ props }) => {
-    const { pages, pathname, handlePathname, isMobile } = props
+const Sidebar = () => {
+    const { pages, pathname, handlePathname } = usePagesContext()
+    const { isMobile } = useResize()
+
     const [retracted, setRetracted] = useState(false)
     const [currentOpacity, setOpacity] = useState('1')
 
@@ -32,12 +37,12 @@ const Sidebar = ({ props }) => {
                                  ${retracted ? style.containerRetracted : style.fullContainer}`}>
                     <div className={style.topHeader} onClick={handlePathname}>
                         {
-                            isMobile ? 
-                            <Close className={`${style.retract}`} /> :
-                            <Retract
-                            onClick={handleRetract}
-                            className={`${style.retract}`}
-                            style={{ opacity: currentOpacity }} />
+                            isMobile ?
+                                <Close className={`${style.retract}`} /> :
+                                <Retract
+                                    onClick={handleRetract}
+                                    className={`${style.retract}`}
+                                    style={{ opacity: currentOpacity }} />
                         }
                         <div className={style.logo}>
                             <Logo Logo={HocoLogo} />
@@ -46,14 +51,16 @@ const Sidebar = ({ props }) => {
 
                     <ul className={style.links}>
                         {pages.map((page) => {
-                            return (
-                                <li key={page.name} onClick={handlePathname}>
-                                    <NavbarLink
-                                        page={page}
-                                        pathname={pathname}
-                                        retracted={retracted} />
-                                </li>
-                            )
+                            if (page.sidebar) {
+                                return (
+                                    <li key={page.name} onClick={handlePathname}>
+                                        <NavbarLink
+                                            page={page}
+                                            pathname={pathname}
+                                            retracted={retracted} />
+                                    </li>
+                                )
+                            }
                         })}
                     </ul>
 
