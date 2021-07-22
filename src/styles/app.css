@@ -14,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 10rem 1rem 2rem 1rem;
+    padding: 7rem 1rem 2rem 1rem;
 
 
 }
@@ -46,6 +46,8 @@
 }
 
 @media screen and (max-width: 550px) {
+    
+
     .mobile-body {
         padding: 6rem 1rem 2rem 1rem;
 

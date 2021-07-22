@@ -1,5 +1,6 @@
 
 .container {
+    width: 200px;
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -22,7 +23,6 @@
 }
 
 @media screen and (max-width: 550px) {
-
     .photo {
         width: 48px;
     }

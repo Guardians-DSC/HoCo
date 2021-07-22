@@ -9,7 +9,7 @@
     position: fixed;
 
     width: 100%;
-    height: 7rem;
+    height: 5rem;
 
     -webkit-backface-visibility: hidden;
     background-color: var(--main-color);
@@ -18,7 +18,7 @@
 }
 
 .logo{
-    width: 13rem;
+    width: 10rem;
 }
 
 .minilogo {
@@ -26,12 +26,12 @@
 }
 
 .burguer {
-    width: 3rem;
+    width: 2rem;
     cursor: pointer;
 }
 
 .photo img {
-    max-width: 5rem !important;
+    max-width: 3.5rem !important;
 }
 
 .sidebarContainer {
@@ -66,23 +66,22 @@
     background-color: #ffffff00;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .headerContainer {
-        height: 4.5rem;
+        height: 4rem;
         padding: 0rem 1rem 0rem 2rem;
     }
 
     .logo {
         display: inline-block;
-        width: 7rem;
+        width: 6rem;
     }
 
     .burguer {
-        width: 1.75rem;
+        width: 1.25rem;
     }
 
     .photo {
-        width: 2.5rem;
-        margin-right: 1rem;
+        max-width: 3rem;
     }
 }
