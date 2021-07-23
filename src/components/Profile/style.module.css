@@ -1,0 +1,29 @@
+
+.container {
+    width: 200px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.photo {
+    max-width: 3.5rem;
+    width: 100%;
+    border: 2px solid var(--background-white);
+    border-radius: 100%;
+}
+
+.name {
+    color: var(--background-white);
+    font-weight: bold;
+}
+
+.retracted .name {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .photo {
+        width: 48px;
+    }
+}

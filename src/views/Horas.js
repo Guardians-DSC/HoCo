@@ -1,10 +1,12 @@
 import React from 'react'
-import Template from './template'
+import {ReactComponent as Clock} from '../assets/darkClock.svg'
 
 function Horas() {
   return (
-    <Template>
-    </Template>
+    <div className='title'>
+      <Clock className='icon'/>
+      <h1>minhas horas</h1>
+    </div>
   );
 }
 

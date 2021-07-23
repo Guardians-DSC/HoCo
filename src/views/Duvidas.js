@@ -1,10 +1,12 @@
 import React from 'react'
-import Template from './template'
+import {ReactComponent as Question} from '../assets/darkQuestion.svg'
 
 function Duvidas() {
   return (
-    <Template >
-    </Template>
+    <div className='title'>
+      <Question className='icon'/>
+      <h1>dúvidas frequentes</h1>
+    </div>
   );
 }
 

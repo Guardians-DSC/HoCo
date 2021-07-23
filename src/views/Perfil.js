@@ -1,10 +1,14 @@
 import React from 'react'
-import Template from './template'
+import { ReactComponent as Profile } from '../assets/darkProfile.svg'
 
 function Perfil() {
   return (
-    <Template>
-    </Template>
+    <div>
+      <div className='title'>
+        <Profile className='icon' />
+        <h1>perfil</h1>
+      </div>
+    </div>
   );
 }
 

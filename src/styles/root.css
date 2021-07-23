@@ -4,4 +4,9 @@
 :root {
     --main-color: #649F71;
     --hover-green: #78b387;
+    --font-grey: #514E4E;
+    --background-white: #F5F5F5;
+
+
+    font-family: 'roboto', sans-serif;;
 }
