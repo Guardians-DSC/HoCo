@@ -17,6 +17,7 @@
 ---
 
 ## Requisitos
+
 Para executar o projeto você precisa instalar as seguintes ferramentas:
 
 - [Node](https://nodejs.org/en/download/package-manager/)
@@ -41,6 +42,7 @@ ou
 npm install
 
 ```
+
 2. Executar o projeto
 
 ```bash
@@ -62,4 +64,3 @@ Pronto! Simples assim e você já consegui executar localmente o projeto. Um aba
   <p><i>No mais é isso! Obrigado por ler até aqui, espero que vocẽ tenha gostado do projeto!</i></p>
   <img width=400 src='https://user-images.githubusercontent.com/42751604/125959482-99171781-d212-4bc2-af3c-1d0adcf813dd.gif'/>
 </div>
-

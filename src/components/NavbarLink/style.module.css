@@ -1,80 +1,77 @@
 /* Base CSS */
 
 .text {
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 1px;
-    
-    color: var(--background-white);
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
 
-    transition: .7s;
-    transition-timing-function: ease;
+  color: var(--background-white);
+
+  transition: 0.7s;
+  transition-timing-function: ease;
 }
 
 .container {
-    display: flex;
-    gap: 1rem;
-    
-    align-items: center;
-    padding: .75rem 1rem;
-    min-height: 2rem;
-    min-width: 2rem;
-    
-    border-radius: 8px;
+  display: flex;
+  gap: 1rem;
 
-    transition: .4s;
-    
-    cursor: pointer;
-    
+  align-items: center;
+  padding: 0.75rem 1rem;
+  min-height: 2rem;
+  min-width: 2rem;
+
+  border-radius: 8px;
+
+  transition: 0.4s;
+
+  cursor: pointer;
 }
 
-.container:hover {   
-    background-color: var(--hover-green);
+.container:hover {
+  background-color: var(--hover-green);
 }
-
 
 .containerActive {
-    background-color: var(--background-white);
+  background-color: var(--background-white);
 }
 
 .containerActive:hover {
-    background-color: var(--background-white) !important;
+  background-color: var(--background-white) !important;
 }
 
 .containerActive .icon {
-    filter: none;
+  filter: none;
 }
 
 .containerActive .text {
-    color: var(--main-color);
-
+  color: var(--main-color);
 }
 
 .icon {
-    max-width: 24px;
-    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(86deg) brightness(1180%) contrast(119%);
+  max-width: 24px;
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(86deg)
+    brightness(1180%) contrast(119%);
 }
 
 .retracted {
-    width: 2rem;
-    margin: 0 auto;
+  width: 2rem;
+  margin: 0 auto;
 
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .retracted .icon {
-    margin: 0 auto;
-    padding-left: 0.2rem;
+  margin: 0 auto;
+  padding-left: 0.2rem;
 }
 
 .retracted .text {
-    opacity: 0;
-    transition: opacity 0s;
-
+  opacity: 0;
+  transition: opacity 0s;
 }
 
 @media screen and (max-width: 550px) {
-    .text {
-        font-size: 14px;
-    }
+  .text {
+    font-size: 14px;
+  }
 }
