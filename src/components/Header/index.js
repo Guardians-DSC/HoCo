@@ -1,22 +1,22 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState } from 'react'
 
-import { ReactComponent as Burguer } from "../../assets/burg.svg";
-import { ReactComponent as LogoIcon } from "../../assets/LogoHoco.svg";
-import usePagesContext from "../../contexts/app.context";
+import { ReactComponent as Burguer } from '../../assets/burg.svg'
+import { ReactComponent as LogoIcon } from '../../assets/LogoHoco.svg'
+import usePagesContext from '../../contexts/app.context'
 
-import { Logo } from "../Logo";
-import { Profile } from "../Profile";
-import Sidebar from "../Sidebar";
+import { Logo } from '../Logo'
+import { Profile } from '../Profile'
+import Sidebar from '../Sidebar'
 
-import style from "./style.module.css";
+import style from './style.module.css'
 
 export const Header = ({ props }) => {
-  const { handlePathname } = usePagesContext();
-  const [isActive, setIsActive] = useState(false);
+  const { handlePathname } = usePagesContext()
+  const [isActive, setIsActive] = useState(false)
 
   const handleActive = useCallback(() => {
-    setIsActive(!isActive);
-  }, [isActive, setIsActive]);
+    setIsActive(!isActive)
+  }, [isActive, setIsActive])
 
   return (
     <div>
@@ -38,7 +38,7 @@ export const Header = ({ props }) => {
         <div className={style.logo} onClick={handlePathname}>
           <Logo
             Logo={LogoIcon}
-            alt="Logo grande do hoco onde está escrito HoCo com o H e o C maiúsculos"
+            alt='Logo grande do hoco onde está escrito HoCo com o H e o C maiúsculos'
           />
         </div>
         <div className={style.photo} onClick={handlePathname}>
@@ -46,5 +46,5 @@ export const Header = ({ props }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

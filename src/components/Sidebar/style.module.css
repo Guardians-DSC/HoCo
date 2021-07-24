@@ -14,7 +14,7 @@
   transition: 0.5s;
   transition-timing-function: ease-out;
 
-  font-family: "Sen", sans-serif;
+  font-family: 'Sen', sans-serif;
 }
 
 .outContainerRetracted > div {

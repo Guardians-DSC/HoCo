@@ -1,39 +1,39 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback } from 'react'
 
-import { ReactComponent as Retract } from "../../assets/retract.svg";
-import { ReactComponent as Close } from "../../assets/x.svg";
-import { ReactComponent as HocoLogo } from "../../assets/LogoHoco.svg";
+import { ReactComponent as Retract } from '../../assets/retract.svg'
+import { ReactComponent as Close } from '../../assets/x.svg'
+import { ReactComponent as HocoLogo } from '../../assets/LogoHoco.svg'
 
-import NavbarLink from "../NavbarLink";
-import { Profile } from "../Profile";
-import { Logo } from "../Logo";
+import NavbarLink from '../NavbarLink'
+import { Profile } from '../Profile'
+import { Logo } from '../Logo'
 
-import { sleep } from "../../util/util";
+import { sleep } from '../../util/util'
 
-import usePagesContext from "../../contexts/app.context";
-import useResize from "../../contexts/resize.context";
+import usePagesContext from '../../contexts/app.context'
+import useResize from '../../contexts/resize.context'
 
-import style from "./style.module.css";
+import style from './style.module.css'
 
 const Sidebar = () => {
-  const { pages, pathname, handlePathname } = usePagesContext();
-  const { isMobile } = useResize();
+  const { pages, pathname, handlePathname } = usePagesContext()
+  const { isMobile } = useResize()
 
-  const [retracted, setRetracted] = useState(false);
-  const [currentOpacity, setOpacity] = useState("1");
+  const [retracted, setRetracted] = useState(false)
+  const [currentOpacity, setOpacity] = useState('1')
 
   const handleRetract = useCallback(async () => {
-    setRetracted(!retracted);
-    setOpacity("0");
-    await sleep(400);
-    setOpacity("1");
-  }, [retracted, setRetracted]);
+    setRetracted(!retracted)
+    setOpacity('0')
+    await sleep(400)
+    setOpacity('1')
+  }, [retracted, setRetracted])
 
   return (
     <div>
       <div
         className={`${isMobile ? style.mobileContainer : style.outContainer}
-                             ${retracted ? style.outContainerRetracted : ""}`}
+                             ${retracted ? style.outContainerRetracted : ''}`}
       >
         <div
           className={`${style.container}
@@ -69,9 +69,9 @@ const Sidebar = () => {
                       retracted={retracted}
                     />
                   </li>
-                );
+                )
               } else {
-                return <></>;
+                return <></>
               }
             })}
           </ul>
@@ -83,7 +83,7 @@ const Sidebar = () => {
         <div></div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar

@@ -1,35 +1,35 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState, useEffect } from 'react'
 
-const ResizeContext = createContext();
+const ResizeContext = createContext()
 
 export function ResizeProvider({ children }) {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1250);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1250)
 
   useEffect(() => {
     window.addEventListener(
-      "resize",
+      'resize',
       () => {
-        const ismobile = window.innerWidth < 1250;
+        const ismobile = window.innerWidth < 1250
         if (ismobile !== isMobile) {
-          setIsMobile(ismobile);
+          setIsMobile(ismobile)
         }
       },
       false
-    );
-  }, [isMobile]);
+    )
+  }, [isMobile])
 
   const values = {
     isMobile,
     setIsMobile,
-  };
+  }
 
   return (
     <ResizeContext.Provider value={values}>{children}</ResizeContext.Provider>
-  );
+  )
 }
 
 export default function useResize() {
-  const context = useContext(ResizeContext);
+  const context = useContext(ResizeContext)
 
-  return { ...context };
+  return { ...context }
 }
