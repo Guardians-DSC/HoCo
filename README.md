@@ -1,7 +1,9 @@
-# O HoCo
+# :clock3: O HoCo
+
+## O que é o HoCo
 
 <p align=center>
-  <img width=350 src='https://user-images.githubusercontent.com/42751604/125948239-49f7484e-d45d-4724-8bb8-d2e3c23845f8.png'/>
+  <img width=350 src='https://user-images.githubusercontent.com/42751604/130678288-4c854469-6d06-4c23-ba23-c89b1fa7cde0.png'/>
 </p>
 <br/>
 
@@ -16,50 +18,52 @@
 
 ---
 
-## Requisitos
-Para executar o projeto você precisa instalar as seguintes ferramentas:
+## :clipboard: Índice
 
-- [Node](https://nodejs.org/en/download/package-manager/)
-- [yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable)
+- [O que é o HoCo](#o-que-é-o-hoco)
+- [Pré-requisitos](#pré-requisitos)
+- [Como executar o projeto](#como-executar-o-projeto)
+- [Como contribuir](#como-contribuir)
+- [Licença e Copyright](#licença-e-copyright)
 
-⚠️ OBS: O yarn não é exatamente uma dependência, mas é interessante que você instale para executar o projeto
 
-### Executando o projeto
+## :gear: Pré-requisitos
 
-Para que você instale o projeto siga os passos a seguir:
+Para executar o projeto você precisa ter instalado na sua máquina o `docker` e `docker-compose`. Abaixo estão alguns links úteis para a instalação dessas dependências:
 
-1. Instalar as dependências do projeto
+- [Link para instalação do docker](https://docs.docker.com/engine/install/ubuntu/)
+- [Link para instalação do docker compose](https://docs.docker.com/compose/install/)
+
+##  :running: Como executar o projeto
+
+Siga os seguintes passos para a execução do projeto:
+
+1. Fazer o clone do projeto e dos seus submodulos de frontend e backend
 
 ```bash
-yarn install
+  git clone --recursive-submodules https://github.com/Guardians-DSC/HoCo
 ```
 
-ou
+2. Executar o arquivo docker-compose.yml na raiz do projeto
 
 ```bash
-
-npm install
-
-```
-2. Executar o projeto
-
-```bash
-yarn start
-```
-
-ou
-
-```bash
-npm start
+  docker-compose up
 ```
 
 Pronto! Simples assim e você já consegui executar localmente o projeto. Um aba se abrirá no seu navegador padrão com o projeto sendo executado localmente.
 
+## :handshake: Como contribuir
+
+Caso você esteja interessada(o)(e) no projeto e queira contribuir para algum dos projetos do HoCo por favor dê uma olhada nas **issues** de cada projeto, se você achou uma issue que lhe interessa leia os documentos de **[Código de conduta]()** e **[Contribuindo]()** para saber mais detalhes.
+
 ⚠️ Ainda estamos trabalhando no projeto, caso você queira acompanhar o avanço do repositório dar um estrelinha ⭐ para você não perder o rep.
+
+## :pencil2: Licença e Copyright
+
+MIT © [Licença](https://github.com/Guardians-DSC/HoCo/blob/main/LICENSE)
 
 <br/>
 <div align=center>
   <p><i>No mais é isso! Obrigado por ler até aqui, espero que vocẽ tenha gostado do projeto!</i></p>
   <img width=400 src='https://user-images.githubusercontent.com/42751604/125959482-99171781-d212-4bc2-af3c-1d0adcf813dd.gif'/>
 </div>
-
