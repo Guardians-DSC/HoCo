@@ -45,7 +45,13 @@ Siga os seguintes passos para a execução do projeto:
   git clone --recursive-submodules https://github.com/Guardians-DSC/HoCo
 ```
 
-2. Executar o arquivo docker-compose.yml na raiz do projeto
+2. Copiar variáveis de ambiente que estão dentro do arquivo `.env.example`
+
+```bash
+  cp .env.example .env
+```
+
+3. Executar o arquivo docker-compose.yml na raiz do projeto
 
 ```bash
   docker-compose up
