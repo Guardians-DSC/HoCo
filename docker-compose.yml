@@ -3,10 +3,14 @@ version: '3'
 services:
   front:
     build: ./frontend
+    volumes:
+      - ./frontend:/app:cached
     ports:
       - ${FRONT_PORT}:3000
   
   api:
     build: ./backend
+    volumes:
+      - ./backend:/app:cached
     ports:
       - ${BACK_PORT}:8000
