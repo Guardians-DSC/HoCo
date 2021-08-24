@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  front:
+    build: ./frontend
+    ports:
+      - 8080:3000
+  
+  api:
+    build: ./backend
