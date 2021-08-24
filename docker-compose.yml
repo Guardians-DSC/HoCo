@@ -4,7 +4,9 @@ services:
   front:
     build: ./frontend
     ports:
-      - 8080:3000
+      - ${FRONT_PORT}:3000
   
   api:
     build: ./backend
+    ports:
+      - ${BACK_PORT}:8000
