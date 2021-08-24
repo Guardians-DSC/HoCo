@@ -20,8 +20,8 @@
 
 ## Índice
 
-- [:clipboard: Índice](#índice)
 - [:grey_question: O que é o HoCo](#o-que-é-o-hoco)
+- [:clipboard: Índice](#índice)
 - [:gear: Pré-requisitos](#pré-requisitos)
 - [:running: Como executar o projeto](#como-executar-o-projeto)
 - [:handshake: Como contribuir](#como-contribuir)
