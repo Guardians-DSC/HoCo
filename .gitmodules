@@ -3,5 +3,5 @@
 	url = https://github.com/Guardians-DSC/Front-HoCo
 
 [submodule "backend"]
-	path = frontend
+	path = backend
 	url = https://github.com/Guardians-DSC/API-HoCo
