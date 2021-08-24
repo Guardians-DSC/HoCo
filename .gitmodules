@@ -1,3 +1,7 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/Guardians-DSC/Front-HoCo
+
+[submodule "backend"]
+	path = frontend
+	url = https://github.com/Guardians-DSC/API-HoCo
