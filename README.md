@@ -18,23 +18,24 @@
 
 ---
 
-## :clipboard: Índice
+## Índice
 
-- [O que é o HoCo](#o-que-é-o-hoco)
-- [Pré-requisitos](#pré-requisitos)
-- [Como executar o projeto](#como-executar-o-projeto)
-- [Como contribuir](#como-contribuir)
-- [Licença e Copyright](#licença-e-copyright)
+- [:clipboard: Índice](#índice)
+- [:grey_question: O que é o HoCo](#o-que-é-o-hoco)
+- [:gear: Pré-requisitos](#pré-requisitos)
+- [:running: Como executar o projeto](#como-executar-o-projeto)
+- [:handshake: Como contribuir](#como-contribuir)
+- [:pencil2: Licença e Copyright](#licença-e-copyright)
 
 
-## :gear: Pré-requisitos
+## Pré-requisitos
 
 Para executar o projeto você precisa ter instalado na sua máquina o `docker` e `docker-compose`. Abaixo estão alguns links úteis para a instalação dessas dependências:
 
 - [Link para instalação do docker](https://docs.docker.com/engine/install/ubuntu/)
 - [Link para instalação do docker compose](https://docs.docker.com/compose/install/)
 
-##  :running: Como executar o projeto
+## Como executar o projeto
 
 Siga os seguintes passos para a execução do projeto:
 
@@ -52,13 +53,13 @@ Siga os seguintes passos para a execução do projeto:
 
 Pronto! Simples assim e você já consegui executar localmente o projeto. Um aba se abrirá no seu navegador padrão com o projeto sendo executado localmente.
 
-## :handshake: Como contribuir
+## Como contribuir
 
 Caso você esteja interessada(o)(e) no projeto e queira contribuir para algum dos projetos do HoCo por favor dê uma olhada nas **issues** de cada projeto, se você achou uma issue que lhe interessa leia os documentos de **[Código de conduta]()** e **[Contribuindo]()** para saber mais detalhes.
 
 ⚠️ Ainda estamos trabalhando no projeto, caso você queira acompanhar o avanço do repositório dar um estrelinha ⭐ para você não perder o rep.
 
-## :pencil2: Licença e Copyright
+## Licença e Copyright
 
 MIT © [Licença](https://github.com/Guardians-DSC/HoCo/blob/main/LICENSE)
 
