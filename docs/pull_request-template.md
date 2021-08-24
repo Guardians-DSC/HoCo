@@ -1,10 +1,10 @@
 ### Meu pull request
 
-[ ] Adiciona uma nova funcionalidade;
-[ ] Conseta um bug;
-[ ] Adiciona uma documentação;
-[ ] Adiciona alguma otimização ao sistema;
-[ ] Adiciona alguma configuração.
+- [ ] Adiciona uma nova funcionalidade;
+- [ ] Conseta um bug;
+- [ ] Adiciona uma documentação;
+- [ ] Adiciona alguma otimização ao sistema;
+- [ ] Adiciona alguma configuração.
 
 ### O que o pull request faz?
 
@@ -20,10 +20,10 @@ Caso você queira adicionar mais alguma informação extra, como gifs, fotos ou 
 
 ### Para finalizar tenha certeza que a PR
 
-[ ] Está bem documentado;
-[ ] Passa nas verificações do linter;
-[ ] Adiciona testes se necessário;
-[ ] Passa nos testes existentes (caso existam).
+- [ ] Está bem documentado;
+- [ ] Passa nas verificações do linter;
+- [ ] Adiciona testes se necessário;
+- [ ] Passa nos testes existentes (caso existam).
 
 
 
