@@ -7,7 +7,7 @@
 </p>
 <br/>
 
-<div align='justify'>
+<div align='center'>
   <p>
   Olá! Bem-vinde ao HoCo. O HoCo é uma plataforma com objetivo de prover (inicialmente) aos alunos da graduação de Ciência da Computação na UFCG <b> uma plataforma onde ele/ela pode salvar e gerenciar as suas horas complementares do curso</b>.
   </p>
