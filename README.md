@@ -11,20 +11,23 @@
   <p>
   Olá! Bem-vinde ao HoCo. O HoCo é uma plataforma com objetivo de prover (inicialmente) aos alunos da graduação de Ciência da Computação na UFCG <b> uma plataforma onde ele/ela pode salvar e gerenciar as suas horas complementares do curso</b>.
   </p>
-  <p>
-  A falta de conhecimento acerca do funcionamento das horas e atividades complementares do curso é algo que é de conhecimento geral dos alunos e professores e foi assim que o HoCo nasceu. <b>O projeto tem como objetivo sanar essa deficiência do curso provendo um lugar onde os alunos além de salvarem suas horas possam ter conhecimento do seu funcionamento e das normas atuais do curso</b>.
-  </p>
 </div>
+
+## :dart: Objetivo
+
+A falta de conhecimento acerca do funcionamento das horas e atividades complementares do curso é algo que é de conhecimento geral dos alunos e professores e foi assim que o HoCo nasceu. **O projeto tem como objetivo sanar essa deficiência do curso provendo um lugar onde os alunos além de salvarem suas horas possam ter conhecimento do seu funcionamento e das normas atuais do curso.**
 
 ---
 
 ## :clipboard: Índice
 
 - [O que é o HoCo](#grey_question-o-que-é-o-hoco)
-- [ Índice](#clipboard-índice)
+- [Objetivo](#dart-objetivo)
+- [Índice](#clipboard-índice)
 - [Pré-requisitos](#gear-pré-requisitos)
 - [Como executar o projeto](#running-como-executar-o-projeto)
 - [Como contribuir](#handshake-como-contribuir)
+- [Equipe do HoCo](#pushpin-equipe-do-hoco)
 - [Licença e Copyright](#pencil2-licença-e-copyright)
 
 
@@ -64,6 +67,13 @@ Pronto! Simples assim e você já consegui executar localmente o projeto. Um aba
 Caso você esteja interessada(o)(e) no projeto e queira contribuir para algum dos projetos do HoCo por favor dê uma olhada nas [**issues**](https://github.com/Guardians-DSC/HoCo/issues) de cada projeto, se você achou uma issue que lhe interessa leia os documentos de **[Código de conduta]()** e **[Contribuindo]()** para saber mais detalhes.
 
 ⚠️ Ainda estamos trabalhando no projeto, caso você queira acompanhar o avanço do repositório dê um estrelinha ⭐ para você não perder as atualizações do rep.
+
+## :pushpin: Equipe do HoCo
+
+- [Franciclaudio Dantas](https://github.com/claudiodantas)
+- [Gustavo Farias](https://github.com/GusttaFS)
+- [Leandra Oliveira](https://github.com/LeandraOS)
+- [Rodrigo Eloy](https://github.com/RodrigoEC)
 
 ## :pencil2: Licença e Copyright
 
