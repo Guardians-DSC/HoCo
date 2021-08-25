@@ -15,7 +15,10 @@
 
 ## :dart: Objetivo
 
-A falta de conhecimento acerca do funcionamento das horas e atividades complementares do curso é algo que é de conhecimento geral dos alunos e professores e foi assim que o HoCo nasceu. **O projeto tem como objetivo sanar essa deficiência do curso provendo um lugar onde os alunos além de salvarem suas horas possam ter conhecimento do seu funcionamento e das normas atuais do curso.**
+A falta de praticamente qualquer conhecimento sobre horas e atividades complementares do curso é um conhecido de longa data dos alunos da graduação de Ciência da Computação na UFCG e foi pensando nisso que o *HoCo* nasceu. 
+
+**O projeto tem como objetivo sanar essa deficiência do curso provendo um lugar onde os alunos além de salvarem suas horas possam ter conhecimento do seu funcionamento e das normas atuais do curso.**
+
 
 ---
 
@@ -27,7 +30,7 @@ A falta de conhecimento acerca do funcionamento das horas e atividades complemen
 - [Pré-requisitos](#gear-pré-requisitos)
 - [Como executar o projeto](#running-como-executar-o-projeto)
 - [Como contribuir](#handshake-como-contribuir)
-- [Equipe do HoCo](#pushpin-equipe-do-hoco)
+- [Mantenedores](#pushpin-mantenedores)
 - [Licença e Copyright](#pencil2-licença-e-copyright)
 
 
@@ -68,7 +71,7 @@ Caso você esteja interessada(o)(e) no projeto e queira contribuir para algum do
 
 ⚠️ Ainda estamos trabalhando no projeto, caso você queira acompanhar o avanço do repositório dê um estrelinha ⭐ para você não perder as atualizações do rep.
 
-## :pushpin: Equipe do HoCo
+## :pushpin: Mantenedores
 
 - [Franciclaudio Dantas](https://github.com/claudiodantas)
 - [Gustavo Farias](https://github.com/GusttaFS)
