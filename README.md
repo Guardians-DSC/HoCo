@@ -67,11 +67,12 @@ Pronto! Simples assim e você já consegui executar localmente o projeto. Um aba
 
 ## :handshake: Como contribuir
 
-Caso você esteja interessada(o)(e) no projeto e queira contribuir para algum dos projetos do HoCo por favor dê uma olhada nas [**issues**](https://github.com/Guardians-DSC/HoCo/issues) de cada projeto, se você achou uma issue que lhe interessa leia os documentos de **[Código de conduta]()** e **[Contribuindo]()** para saber mais detalhes.
+Caso você esteja interessada(o)(e) no projeto e queira contribuir para algum dos projetos do HoCo por favor dê uma olhada nas [**issues**](https://github.com/Guardians-DSC/HoCo/issues) de cada projeto, se você achou uma issue que lhe interessa leia os documentos de **[Código de conduta](https://github.com/Guardians-DSC/HoCo/blob/main/CODE_OF_CONDUCT.md)** e **[Contribuindo]()** para saber mais detalhes.
 
 ⚠️ Ainda estamos trabalhando no projeto, caso você queira acompanhar o avanço do repositório dê um estrelinha ⭐ para você não perder as atualizações do rep.
 
 ## :pushpin: Mantenedores
+
 
 - [Franciclaudio Dantas](https://github.com/claudiodantas)
 - [Gustavo Farias](https://github.com/GusttaFS)
