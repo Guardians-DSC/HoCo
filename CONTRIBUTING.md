@@ -36,8 +36,7 @@ Pronto, terminada a sua implementação, com seus commits bonitinhos, faça o pu
 
 O pull request é o seu pedido para que o código que você implementou seja fundido ao repositório principal.
 
-Para criar um Pull Request (PR) basta que você vá na pagina dos pull requests no repositório principal do projeto,
-[Link do repositório principal](https://github.com/Guardians-DSC/HoCo/](https://github.com/Guardians-DSC/HoCo), e clique em "new pull request". 
+Para criar um Pull Request (PR) basta que você vá na pagina dos pull requests no repositório principal do projeto, [Link do repositório principal](https://github.com/Guardians-DSC/HoCo)), e clique em "new pull request". 
 Preencha as informações requisitadas no form padrão da PR e marque pelo menos dois mantainers para revisarem a sua PR, depois de duas aprovações a sua PR 
 será fundida ao projeto principal.
 
