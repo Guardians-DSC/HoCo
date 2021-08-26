@@ -41,3 +41,9 @@ Preencha as informações requisitadas no form padrão da PR e marque pelo menos
 será fundida ao projeto principal.
 
 **Mantainers atuais:** @rodrigoec, @leandraos, @claudiodantas ou @gustafss
+
+</br>
+<div align=center>
+  <p><i>Espero que você contribua bastante hehe! Tchau tchau</i></p>
+  <img width=350px src='https://user-images.githubusercontent.com/42751604/130894080-5dc128c4-1fdd-4978-846b-9556cf669a02.gif'/>  
+</div>
