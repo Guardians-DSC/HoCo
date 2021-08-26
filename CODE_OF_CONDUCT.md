@@ -1,4 +1,4 @@
-## Código de condunta no HoCo
+# Código de condunta no HoCo
 
 :warning: OBS: Esse código de conduta foi inspirado no código de conduta da organização OpenDevUFCG, caso você queira dar uma olhada.
 
