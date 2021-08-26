@@ -100,6 +100,13 @@ Caso você esteja interessada(o)(e) no projeto e queira contribuir para algum do
 - [Leandra Oliveira](https://github.com/LeandraOS)
 - [Rodrigo Eloy](https://github.com/RodrigoEC)
 
+## Contribuidores
+
+<a href="https://github.com/Guardians-DSC/HoCo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Guardians-DSC/HoCo" />
+</a>
+
+
 ## :pencil2: Licença e Copyright
 
 MIT © [Licença](https://github.com/Guardians-DSC/HoCo/blob/main/LICENSE)
