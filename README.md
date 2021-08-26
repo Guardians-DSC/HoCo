@@ -38,7 +38,7 @@ A falta de praticamente qualquer conhecimento sobre horas e atividades complemen
 
 Para executar o projeto você precisa ter instalado na sua máquina o `docker` e `docker-compose`. Abaixo estão alguns links úteis para a instalação dessas dependências:
 
-- [Link para instalação do docker](https://docs.docker.com/engine/install/ubuntu/)
+- [Link para instalação do docker](https://www.hostinger.com.br/tutoriais/install-docker-ubuntu)
 - [Link para instalação do docker compose](https://docs.docker.com/compose/install/)
 
 ## :running: Como executar o projeto
@@ -51,19 +51,40 @@ Para executar o projeto você precisa ter instalado na sua máquina o `docker` e
   git clone --recursive-submodules https://github.com/Guardians-DSC/HoCo
 ```
 
-2. Copiar variáveis de ambiente que estão dentro do arquivo `.env.example`
+2. Entrar na pasta do projeto
+```bash
+  cd HoCo
+```
+
+3. Copiar variáveis de ambiente que estão dentro do arquivo `.env.example`
 
 ```bash
   cp .env.example .env
 ```
 
-3. Executar o arquivo `docker-compose.yml` na raiz do projeto
+4. Entrar nas pastas do frontend e atualizar branch
+
+```bash
+  cd frontend
+  git pull origin main
+```
+
+5. Entrar na pasta do backend e atualizar branch
+
+```bash
+  cd backend
+  git pull origin main
+```
+
+6. Executar o arquivo `docker-compose.yml` na raiz do projeto
 
 ```bash
   docker-compose up
 ```
 
-Pronto! Simples assim e você já consegui executar localmente o projeto. Um aba se abrirá no seu navegador padrão com o projeto sendo executado localmente.
+⚠️ ATENÇÂO: Se o comando acima acarretou em um erro de permissão, então você precisa criar um grupo docker, para isso veja o link a seguir: [Link para rodar o docker-compose up sem sudo criando um grupo](https://docs.docker.com/engine/install/linux-postinstall/)
+
+Pronto! Simples assim e você já consegui executar localmente o projeto, caso você esteja executando o projeto e modificar alguma coisa no código o projeto será atualizado automaticamente.
 
 ## :handshake: Como contribuir
 
