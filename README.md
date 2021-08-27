@@ -65,7 +65,7 @@ Para executar o projeto você precisa ter instalado na sua máquina o `docker` e
 4. Atualizar submodulos do repositório
 
 ```bash
-  git submodule update --remote --merge
+  git submodule update --remote --recursive
 ```
 
 5. Executar o arquivo `docker-compose.yml` na raiz do projeto
