@@ -62,21 +62,13 @@ Para executar o projeto você precisa ter instalado na sua máquina o `docker` e
   cp .env.example .env
 ```
 
-4. Entrar nas pastas do frontend e atualizar branch
+4. Atualizar submodulos do repositório
 
 ```bash
-  cd frontend
-  git pull origin main
+  git submodule update --remote --merge
 ```
 
-5. Entrar na pasta do backend e atualizar branch
-
-```bash
-  cd backend
-  git pull origin main
-```
-
-6. Executar o arquivo `docker-compose.yml` na raiz do projeto
+5. Executar o arquivo `docker-compose.yml` na raiz do projeto
 
 ```bash
   docker-compose up
