@@ -1,7 +1,9 @@
 [submodule "frontend"]
 	path = frontend
+	branch = main
 	url = https://github.com/Guardians-DSC/Front-HoCo
 
 [submodule "backend"]
 	path = backend
+	branch = main
 	url = https://github.com/Guardians-DSC/API-HoCo
