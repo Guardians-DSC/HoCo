@@ -9,7 +9,7 @@ OpenSource até pessoas que já são programadores a um tempo, então espero que
 
 Caso você queira contribuir e não saiba com o que exatamente por favor dê uma olhada na página [issues](https://github.com/Guardians-DSC/HoCo/issues) 
 do nosso repositório, caso existam algumas issues abertas você pode pedir nos comentários da issue para ter o assign nela, significando que você vai 
-ficar responsável por tentar resolver aquele problema.
+ficar responsável por tentar resolver aquele problema com um tempo de **duas a três semanas**.
 
 As issues não servem apenas para verificar como você pode contribuir com o projeto, caso você encontre algum `bug` , `pensou em alguma refatoração` ou 
 `uma adição legal ao projeto`, por favor crie uma nova issue explicando o motivo de você estar criando ela.
