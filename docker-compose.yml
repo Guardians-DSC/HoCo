@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
   front:
@@ -8,6 +8,12 @@ services:
       - /app/node_modules
     ports:
       - ${FRONT_PORT}:3000
+    deploy:
+      resources:
+        limits:
+          memory: 2048M
+        reservations:
+          memory: 1028M
   
   api:
     build: ./backend
@@ -15,3 +21,9 @@ services:
       - ./backend:/app:cached
     ports:
       - ${BACK_PORT}:8000
+    deploy:
+      resources:
+        limits:
+          memory: 2048M
+        reservations:
+          memory: 1028M
