@@ -48,7 +48,7 @@ Para executar o projeto você precisa ter instalado na sua máquina o `docker` e
 1. Fazer o *clone* do projeto e dos seus submodulos de frontend e backend
 
 ```bash
-  git clone --recursive-submodules https://github.com/Guardians-DSC/HoCo
+  git clone --recurse-submodules https://github.com/Guardians-DSC/HoCo
 ```
 
 2. Entrar na pasta do projeto
