@@ -1,8 +1,10 @@
-version: '3.7'
+version: '3.8'
 
 services:
   front:
+    container_name: frontend
     build: ./frontend
+    user: node
     volumes:
       - ./frontend:/app:cached
       - /app/node_modules
@@ -16,6 +18,7 @@ services:
           memory: 1028M
   
   api:
+    container_name: API
     build: ./backend
     volumes:
       - ./backend:/app:cached
@@ -27,3 +30,17 @@ services:
           memory: 2048M
         reservations:
           memory: 1028M
+  bd-mongo:
+    container_name: mongodb
+    image: mongo:4.2
+    ports:
+      - ${MONGO_PORT}:27017
+    volumes:
+      - ./volumes/mongodb:/data/bd-mongo
+    restart: unless-stopped
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
