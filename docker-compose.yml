@@ -10,6 +10,8 @@ services:
       - /app/node_modules
     ports:
       - ${FRONT_PORT}:3000
+    networks:
+      - backend
     deploy:
       resources:
         limits:
@@ -24,6 +26,8 @@ services:
       - ./backend:/app:cached
     ports:
       - ${BACK_PORT}:8000
+    networks:
+      - backend
     deploy:
       resources:
         limits:
