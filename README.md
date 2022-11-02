@@ -68,9 +68,16 @@ Para executar o projeto você precisa ter instalado na sua máquina o `docker` e
   git submodule update --remote --recursive
 ```
 
-5. Executar o arquivo `docker-compose.yml` na raiz do projeto
+5. Instale as dependencias do frontend
+```
+  cd frontend
+  npm i
+```
+
+6. Executar o arquivo `docker-compose.yml` na raiz do projeto
 
 ```bash
+  cd ..
   docker-compose up
 ```
 
