@@ -5,6 +5,10 @@ services:
     container_name: frontend
     build: ./frontend
     user: node
+    environment:
+      - REACT_APP_DOMAIN=${REACT_APP_DOMAIN}
+      - REACT_APP_CLIENTID=${REACT_APP_CLIENTID}
+      - REACT_APP_URI=${REACT_APP_URI}
     volumes:
       - ./frontend:/app:cached
       - /app/node_modules
